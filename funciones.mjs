@@ -1,5 +1,5 @@
 import pg from "pg"
-import express from "express"
+
 const {Pool} = pg; 
 const pool = new Pool({
     host: 'localhost',

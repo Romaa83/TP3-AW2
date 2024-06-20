@@ -1,20 +1,8 @@
 import express from "express"
-import pg from "pg"
 import 'dotenv/config'
 import cors from "cors"
 import { TraerProductos , TraerProductosID, agregarProductos, eliminarProductos, modificarProductos} from "./funciones.mjs"
 
-const {Pool} = pg; 
-const pool = new Pool({
-    host: 'localhost',
-    port: 5432,
-    user: process.env.USER,
-    password: process.env.PASSWORD,
-    database: process.env.DATABASE,
-    max: 20,
-    idleTimeoutMillis: 30000,
-    connectionTimeoutMillis: 2000,
-})
 
 const app = express()
 const  PORT = process.env.PORT || 5000
