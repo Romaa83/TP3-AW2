@@ -1,0 +1,4 @@
+PORT=3000
+PASSWORD=pass
+USER=root
+DATABASE=productos
